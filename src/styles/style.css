@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #41a2f2;
+  --secondary-color: #f0bbc8;
+  --border-radius: px;
+  --border-radius-button: 50px
+  --body-width: 100vw;
+  --main-container-width: 900px;
+  --main-container-height: 600px;
+  --input-width: 300px;
+  --input-height: 40px;
+  --avatar-width:80px;
+  --avatar-height:80px;
+  --avatar-radius:50%;
+}
+
+* {
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Poppins-Black;
+  src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  place-items: center;
+  width: var(--body-width);
+  background-color: #dcd5d5;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 15%;
+  width: var(--main-container-width);
+  height: var(--main-container-height);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 2px 1px var(--secondary-color);
+  display: flex;
+}
+.login-container {
+  width: 50%;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: column wrap;
+  place-items: center;
+  font-family: Poppins-Black;
+  gap: 2em;
+}
+.form-login {
+  display: flex;
+  flex-flow: column;
+  gap: 3em;
+  font-family: Poppins-Light;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column;
+}
+
+input {
+    outline: none;
+  
+  accent-color:none;
+  width: var(--input-width);
+  height: var(--input-height);
+  border-radius: var(--border-radius);
+}
+
+
+a {
+  text-decoration: none;
+  font-family: Poppins-Black;
+  color: #fff;
+  width: var(--input-width);
+  height: var(--input-height);
+  background-color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-button);
+}
+.right-container{
+    background-color:var(--primary-color);
+    background-image: url('../assets/background.avif');
+   
+    height: var(--main-container-height);
+    width: 50%;
+    background-size: cover;
+    background-blend-mode:lighten;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins-Black;
+    font-size:medium;
+    word-spacing: normal;
+    color: #ffffff;
+}
+
+.sign-btn{
+
+    background-color: #fff;
+    width: 100px;
+    color: var(--primary-color);
+    border: var(--body-width);
+}
+
+.avatar-container{
+
+    height: var(--avatar-height);
+    width: var(--avatar-width);
+    border-radius: var(--avatar-radius);
+    background-color: var(--primary-color);
+
+    
+}
