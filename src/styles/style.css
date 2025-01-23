@@ -1,7 +1,7 @@
 :root {
   --primary-color: #41a2f2;
   --secondary-color: #f0bbc8;
-  --border-radius: px;
+  --border-radius: 5px;
   --border-radius-button: 50px
   --body-width: 100vw;
   --main-container-width: 900px;
@@ -39,8 +39,7 @@ body {
   width: var(--main-container-width);
   height: var(--main-container-height);
   background-color: var(--primary-color);
-  border-radius: var(--border-radius);
-  box-shadow: 2px 2px 2px 1px var(--secondary-color);
+  border-radius: 20px; 
   display: flex;
 }
 .login-container {
@@ -73,7 +72,20 @@ input {
   accent-color:none;
   width: var(--input-width);
   height: var(--input-height);
-  border-radius: var(--border-radius);
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+  
+}
+label{
+  font-family: Poppins-Black;
+}
+
+input:focus{
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+  border-bottom: 2px solid var(--primary-color); 
 }
 
 
@@ -89,16 +101,19 @@ a {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  border-radius: var(--border-radius-button);
+  border: 2px solid var(--primary-color); 
+  border-radius: 20px; 
+ 
 }
 .right-container{
     background-color:var(--primary-color);
     background-image: url('../assets/background.avif');
+    background-size: cover;
+    background-blend-mode:lighten;
    
     height: var(--main-container-height);
     width: 50%;
-    background-size: cover;
-    background-blend-mode:lighten;
+
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -123,6 +138,17 @@ a {
     width: var(--avatar-width);
     border-radius: var(--avatar-radius);
     background-color: var(--primary-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
 
     
+}
+
+.avatar{
+  height: var(--avatar-height);
+  width: var(--avatar-width);
+  object-fit: cover;
 }
