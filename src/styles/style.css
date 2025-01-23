@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #41a2f2;
+  --primary-color: #f66313;
   --secondary-color: #f0bbc8;
   --border-radius: 5px;
   --border-radius-button: 50px
@@ -67,9 +67,7 @@ body {
 }
 
 input {
-    outline: none;
-  
-  accent-color:none;
+  outline: none;
   width: var(--input-width);
   height: var(--input-height);
   border-top: none; 
