@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ee5818;
+  --primary-color: #338cf8;
   --secondary-color: #f0bbc8;
   --border-radius: 5px;
   --border-radius-button: 50px
@@ -73,15 +73,13 @@ body {
 .input-container {
   display: flex;
   flex-flow: column;
+  gap:1em;
 }
 
 input {
   outline: none;
   width: var(--input-width);
   height: var(--input-height);
-  border-top: none; 
-  border-left: none; 
-  border-right: none; 
   font-family: Poppins-Regular;
 }
 
@@ -92,10 +90,7 @@ label{
 }
 
 input:focus{
-  border-top: none; 
-  border-left: none; 
-  border-right: none; 
-  border-bottom: 2px solid var(--primary-color); 
+  border: 2px solid var(--primary-color); 
 }
 
 
@@ -134,10 +129,10 @@ a {
     color: #ffffff;
 }
 
-.sign-btn{
+.sign-up-btn{
 
     background-color: #fff;
-    width: 100px;
+    width: 200px;
     color: var(--primary-color);
     border: var(--body-width);
 }
