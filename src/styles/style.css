@@ -73,13 +73,15 @@ body {
 .input-container {
   display: flex;
   flex-flow: column;
-  gap:1em;
 }
 
 input {
   outline: none;
   width: var(--input-width);
   height: var(--input-height);
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
   font-family: Poppins-Regular;
 }
 
@@ -90,7 +92,10 @@ label{
 }
 
 input:focus{
-  border: 2px solid var(--primary-color); 
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+  border-bottom: 2px solid var(--primary-color); 
 }
 
 
