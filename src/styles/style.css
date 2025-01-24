@@ -1,19 +1,23 @@
 :root {
-  --primary-color: #f66313;
+  --primary-color: #ee5818;
   --secondary-color: #f0bbc8;
   --border-radius: 5px;
   --border-radius-button: 50px
   --body-width: 100vw;
   --main-container-width: 900px;
-  --main-container-height: 600px;
+  --main-container-height: 650px;
   --input-width: 300px;
   --input-height: 40px;
   --avatar-width:80px;
   --avatar-height:80px;
   --avatar-radius:50%;
+  --btn-check-btn-width:20px;
+  --btn-check-btn-height:20px;
+
 }
 
 * {
+  word-spacing: normal;
 }
 
 @font-face {
@@ -23,6 +27,11 @@
 @font-face {
   font-family: Poppins-Black;
   src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/PT_Mono/PTMono-Regular.ttf");
 }
 
 body {
@@ -35,7 +44,7 @@ body {
 }
 
 .main {
-  margin-top: 15%;
+  margin-top: 10%;
   width: var(--main-container-width);
   height: var(--main-container-height);
   background-color: var(--primary-color);
@@ -73,10 +82,13 @@ input {
   border-top: none; 
   border-left: none; 
   border-right: none; 
+  font-family: Poppins-Regular;
 }
 
 label{
-  font-family: Poppins-Black;
+  font-family: Poppins-Regular;
+  color:var(--primary-color);
+  
 }
 
 input:focus{
@@ -149,4 +161,28 @@ a {
   height: var(--avatar-height);
   width: var(--avatar-width);
   object-fit: cover;
+}
+
+.password-recovery-container{
+  display: flex;
+  place-items: center;
+  gap: 4em;
+}
+
+.btn-remember{
+  width: var(--btn-check-btn-width);
+  height: var(--btn-check-btn-height);
+  accent-color: var(--primary-color);
+  
+}
+
+.checkbox-container{
+  display: flex;
+  place-items: center;
+}
+
+.forgot-pass-btn{
+  color: #767373;
+  font-family: Poppins-Regular;
+  word-spacing: normal;
 }
