@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #338cf8;
+  --primary-color: #ff6310;
   --secondary-color: #f0bbc8;
   --border-radius: 5px;
   --border-radius-button: 50px
@@ -83,6 +83,7 @@ input {
   border-left: none; 
   border-right: none; 
   font-family: Poppins-Regular;
+  transition: border-bottom 0.3s ease;
 }
 
 label{
