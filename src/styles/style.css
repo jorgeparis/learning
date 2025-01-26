@@ -71,6 +71,13 @@ body {
   
 }
 
+li:hover{
+  cursor: pointer;
+  background-color:#434345;
+  border-radius: var(--border-radius);
+}
+
+
 .header nav li{
   width: 40px;
   height: 40px;
