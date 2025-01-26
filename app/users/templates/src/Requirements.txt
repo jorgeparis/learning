@@ -1,7 +1,0 @@
-
-
-1. VS CODE;
-
-Pesquisa VS CODE NO Google e faz o Download;
-
-2. Extensao LiveServer no  VS CODE;
