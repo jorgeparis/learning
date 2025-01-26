@@ -1,0 +1,206 @@
+:root {
+  --primary-color: #ff6310;
+  --secondary-color: #f0bbc8;
+  --border-radius: 5px;
+  --border-radius-button: 50px
+  --body-width: 100vw;
+  --main-container-width: 900px;
+  --main-container-height: 650px;
+  --input-width: 300px;
+  --input-height: 40px;
+  --avatar-width:80px;
+  --avatar-height:80px;
+  --avatar-radius:50%;
+  --btn-check-btn-width:20px;
+  --btn-check-btn-height:20px;
+
+}
+
+* {
+  word-spacing: normal;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Poppins-Black;
+  src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/PT_Mono/PTMono-Regular.ttf");
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  place-items: center;
+  width: var(--body-width);
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 10%;
+  width: var(--main-container-width);
+  height: var(--main-container-height);
+  background-color: var(--primary-color);
+  border-radius: 20px; 
+  display: flex;
+  opacity: 0.89;
+}
+.login-container {
+  width: 50%;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: column wrap;
+  place-items: center;
+  font-family: Poppins-Black;
+  gap: 2em;
+}
+.form-login {
+  display: flex;
+  flex-flow: column;
+  gap: 3em;
+  font-family: Poppins-Light;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column;
+}
+
+input {
+  outline: none;
+  width: var(--input-width);
+  height: var(--input-height);
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+  font-family: Poppins-Regular;
+  transition: border-bottom 0.3s ease;
+}
+
+label{
+  font-family: Poppins-Regular;
+  color:var(--primary-color);
+  
+}
+
+input:focus{
+  border-top: none; 
+  border-left: none; 
+  border-right: none; 
+  border-bottom: 2px solid var(--primary-color); 
+}
+
+
+a {
+  text-decoration: none;
+  font-family: Poppins-Black;
+  color: #fff;
+  width: var(--input-width);
+  height: var(--input-height);
+  background-color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-color); 
+  border-radius: 20px; 
+ 
+}
+.right-container{
+    background-color:var(--primary-color);
+    background-image: url('../assets/background.avif');
+    background-size: cover;
+    background-blend-mode:lighten;
+   
+    height: var(--main-container-height);
+    width: 50%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins-Black;
+    font-size:medium;
+    word-spacing: normal;
+    color: #ffffff;
+}
+
+.sign-up-btn{
+
+    background-color: #fff;
+    width: 200px;
+    color: var(--primary-color);
+    border: var(--body-width);
+}
+
+.avatar-container{
+
+    height: var(--avatar-height);
+    width: var(--avatar-width);
+    border-radius: var(--avatar-radius);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+    
+}
+
+.avatar{
+  height: var(--avatar-height);
+  width: var(--avatar-width);
+  object-fit: cover;
+}
+
+.password-recovery-container{
+  display: flex;
+  place-items: center;
+  gap: 4em;
+}
+
+.btn-remember{
+  width: var(--btn-check-btn-width);
+  height: var(--btn-check-btn-height);
+  accent-color: var(--primary-color);
+  
+}
+
+.checkbox-container{
+  display: flex;
+  place-items: center;
+}
+
+.forgot-pass-btn{
+  color: #767373;
+  font-family: Poppins-Regular;
+  word-spacing: normal;
+}
+
+.material-symbols-light--search-rounded {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}

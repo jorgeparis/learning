@@ -1,0 +1,13 @@
+:root {
+  --btn-width: 250px;
+  --btn-height: 40px;
+  --text-input-width: 250px;
+  --text-input-height: 35px;
+  --checkbox-width: 20px;
+  --checkbox-height: 20px;
+  --border-radius: 5px;
+  --select-list-width: 300px;
+  --select-list-height: 40px;
+  --arrow-select-list-size: 20px;
+  --font-weigt-text: bold;
+}
