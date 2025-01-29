@@ -75,6 +75,7 @@ li:hover{
   cursor: pointer;
   background-color:#434345;
   border-radius: var(--border-radius);
+  transition: background-color cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 
@@ -105,7 +106,7 @@ gap:4em;
   width: var(--main-container-width);
   height: var(--main-container-height);
   background-color: var(--primary-color);
-  border-radius: 20px; 
+  border-radius: 30px; 
   display: flex;
   opacity: 0.89;
 }
@@ -222,6 +223,10 @@ input {
   font-family: Poppins-Regular;
   transition: border-bottom 0.3s ease;
   cursor: pointer;
+  filter: drop-shadow(2px 1px 0 rgb(83, 67, 67)) 
+  drop-shadow(2px 1px 0 rgb(83, 67, 67));
+  transition: filter 0.3s ease;
+
 }
 
 .search-btn{
@@ -248,7 +253,10 @@ input:focus{
   border-top: none; 
   border-left: none; 
   border-right: none; 
-  border-bottom: 2px solid var(--primary-color); 
+  border-bottom: 2px solid rgb(83, 67, 67);
+  caret-color: var(--primary-color);
+ transition: border-radius cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
 }
 
 
@@ -279,13 +287,26 @@ a {
 
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
+place-items: center;
+place-content: center;
     font-family: Poppins-Black;
     font-size:medium;
     word-spacing: normal;
     color: #ffffff;
 }
+
+.right-container span{
+  height: 100px;
+  width: 100px;
+  justify-self: center;
+  margin-left: 50%;
+  margin-right: 50%;
+  background-color: #fff;
+  --svg:url("xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.44 72.34"><defs><style>.cls-1{fill:#3a7ca6;}.cls-2{font-size:48px;fill:#fff;stroke:#fff;stroke-miterlimit:10;font-family:BarlowCondensed-Black, Barlow Condensed;font-weight:800;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" y="7.85" width="64.07" height="62.36" rx="17.77"/><text class="cls-2" transform="translate(7.39 55.74)">JP</text><circle class="cls-1" cx="68.22" cy="7.85" r="7.85"/><text/><text/></g></g>")
+}
+
+
+
 
 .sign-up-btn{
 
@@ -585,6 +606,21 @@ a {
 
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20.5 6.5v-2h-2v-1h2v-2h1v2h2v1h-2v2zm-5.188 4.116q.467 0 .789-.327t.322-.793t-.326-.79q-.327-.321-.794-.321t-.789.326t-.322.793t.327.79q.326.322.793.322m-6.615 0q.466 0 .788-.327q.323-.327.323-.793q0-.467-.327-.79q-.327-.321-.793-.321q-.467 0-.789.326q-.322.327-.322.793q0 .467.326.79q.327.322.794.322M12 16.884q1.459 0 2.65-.789q1.19-.79 1.796-2.095H7.554q.605 1.306 1.796 2.095t2.65.79M12.003 21q-1.867 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51q.709-1.643 1.924-2.859T8.49 3.709T12 3q.998 0 1.94.203q.943.203 1.79.603V6.5h2.75v2.77h2.109q.205.647.308 1.323Q21 11.266 21 12q0 1.868-.708 3.51t-1.924 2.858t-2.856 1.923t-3.509.709'/%3E%3C/svg%3E");
   background-color: var(--primary-color);
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+.logo-brand-jp {
+  display: inline-block;
+  width: var(--icon-width);
+  height: var(--icon-height);
+  --svg: url("data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.07 89.85"><defs><style>.cls-1,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{fill:#3a7ca6;}.cls-2{font-size:48px;fill:#fff;stroke:#fff;stroke-miterlimit:10;}.cls-2,.cls-7{font-family:BarlowCondensed-Black, Barlow Condensed;font-weight:800;}.cls-3,.cls-4,.cls-5{stroke-width:2px;}.cls-3,.cls-4,.cls-5,.cls-6{font-size:36px;}.cls-4{letter-spacing:-0.04em;}.cls-5{letter-spacing:0em;}.cls-6{stroke-width:3px;}.cls-7{font-size:18px;}.cls-8{letter-spacing:0em;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" y="23.03" width="64.07" height="62.36" rx="17.77"/><text class="cls-2" transform="translate(2.76 69.17)">JO<tspan class="cls-3" x="45.79" y="0">RGE </tspan><tspan class="cls-4" x="103.75" y="0">P</tspan><tspan class="cls-5" x="119.63" y="0">ARIS</tspan><tspan class="cls-6" x="181.69" y="0"> </tspan></text><text class="cls-7" transform="translate(76.07 86)">TECNO<tspan class="cls-8" x="43.76" y="0">L</tspan><tspan x="51.7" y="0">OGIA</tspan></text><circle class="cls-1" cx="190.21" cy="36.98" r="7.85"/><text y="23.03"/></g></g>");
+  background-color: #fff;
   -webkit-mask-image: var(--svg);
   mask-image: var(--svg);
   -webkit-mask-repeat: no-repeat;
