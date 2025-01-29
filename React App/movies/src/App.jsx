@@ -12,7 +12,7 @@ function App() {
       <div className="main-container">
         <Navbar />
         <Search/>
-        <Card/>
+        <Card movies={{url:"fdf", name:'Ola', title:"Jorge"}}/>
       </div>
     </>
   );

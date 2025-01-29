@@ -20,14 +20,14 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  accent-color: none;
   padding: 10px;
+  background-color: #141414;
+  border-radius: 5px;
 }
 
-.search-input:focus{
-    border-bottom:5px #f71212;
+.search-input:focus {
+  cursor: pointer;
 }
-
 
 .submit-btn {
   height: var(--submit-bnt-height);
@@ -36,4 +36,9 @@
   outline: none;
   accent-color: none;
   border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
 }
