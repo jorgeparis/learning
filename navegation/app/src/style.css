@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Thermal;
+  src: url("../fonts/Merchant.ttf");
+}
+@font-face {
+  font-family: Thermal_DoubleSize;
+  src: url("../fonts/Merchant_Doublesize.ttf");
+}
+@font-face {
+  font-family: Thermal_Wide;
+  src: url("../fonts/Merchant_Wide.ttf");
+}
+
+* {
+  --primary-color: #0081a7;
+  --secondary-color: #f07167;
+  --terciary-color: #dad7cd;
+  --icon-height: 3rem;
+  --icon-width: 3rem;
+  --gap: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: Thermal_DoubleSize;
+  color: var(--primary-color);
+  background-color: var(--terciary-color);
+  font-weight: bold;
+  padding: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.nav-bar-elements li {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  display: flex;
+  place-items: center;
+  color: var(--primary-color);
+}
+
+.brand-logo {
+  height: var(--icon-height);
+  width: var(--icon-width);
+}
+
+.nav-bar-elements {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: var(--gap);
+  place-content: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+hr {
+  width: 70%;
+}
